@@ -8,11 +8,11 @@
       No adjustments or returns added yet
     </div>
 
-    <!-- Adjustment Items in Two Columns -->
+    <!-- Adjustment Items-->
     <div v-else class="grid grid-cols-1 md:grid-cols-2 gap-3">
       <AdjustmentItems
         v-for="(adjustment, i) in adjustments"
-        :key="i"
+        :key="adjustment.id"
         :adjustment="adjustment"
         :product-index="productIndex"
         :adjustment-index="i"

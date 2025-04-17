@@ -3,6 +3,7 @@ export interface Adjustment {
     adjustment: string;
     batch: string;
     qty: number;
+    id?: string; 
 }
 
 export interface Product {
